@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.5, user-scalable=yes" />
+    <meta name="theme-color" content="#1e1e1e" />
+    <meta name="description" content="Timer Pomodoro com Gamificação e IA" />
+    <title>FocusFM</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <!-- Script inline para aplicar o tema ANTES do React carregar, evitando flash -->
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('app-theme') || 'lofi';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          // Se der erro (ex: localStorage bloqueado), usa tema padrão
+          document.documentElement.setAttribute('data-theme', 'lofi');
+        }
+      })();
+    </script>
+    <!-- Estilo inline para garantir que o background apareça imediatamente -->
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        /* Usa as variáveis CSS que serão definidas no index.css */
+        background-color: var(--color-bg, #fef7ff);
+        color: var(--color-text, #5b21b6);
+        transition: background-color 1.5s ease, color 1.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

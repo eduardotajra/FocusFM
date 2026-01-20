@@ -1,0 +1,16 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" rx="24" fill="#c084fc"/>
+  
+  <!-- Timer Circle -->
+  <circle cx="96" cy="96" r="70" stroke="#ffffff" stroke-width="8" fill="none"/>
+  
+  <!-- Timer Hand (pointing to 12 o'clock) -->
+  <line x1="96" y1="96" x2="96" y2="40" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Center Dot -->
+  <circle cx="96" cy="96" r="6" fill="#ffffff"/>
+  
+  <!-- Text "FM" -->
+  <text x="96" y="140" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">FM</text>
+</svg>

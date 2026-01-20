@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background com gradiente -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c084fc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="64" fill="url(#bgGradient)"/>
+  
+  <!-- Timer Circle -->
+  <circle cx="256" cy="256" r="186" stroke="#ffffff" stroke-width="20" fill="none" opacity="0.9"/>
+  
+  <!-- Timer Hand (pointing to 12 o'clock) -->
+  <line x1="256" y1="256" x2="256" y2="110" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+  
+  <!-- Center Dot -->
+  <circle cx="256" cy="256" r="16" fill="#ffffff"/>
+  
+  <!-- Text "FM" -->
+  <text x="256" y="380" font-family="Arial, sans-serif" font-size="86" font-weight="bold" fill="#ffffff" text-anchor="middle" opacity="0.95">FM</text>
+</svg>
